@@ -1,76 +1,143 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
-  }
-  
-  body{
-      background-color: #cef3d2b0 ;
-      height: 100vh;
-     
-  }
-  
-  .container{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-  }
-  
-  .square{
-      background-color:#cef3d2 ;
-      height: 500px;
-      width: 500px;
-      position: relative;
-  }
-  
-  .sun{
-      background-color: #fff;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      position: absolute;
-      top: 20%;
-      left: 20%;
-      scale: 0.8;
-  }
-  
-  .sun::after{
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      background-color: #ffffff40;
-      height: 145%;
-      width: 145%;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-  }
-  
-  .sun::before{
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      background-color: #ffffff3d;
-      height: 185%;
-      width: 185%;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-  }
-  
-  .gramaWrapper{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      top: 100%;
-      transform: translateY(-100%);
-  }
-  
-  .grama{
-      background-color: #7DE495;
-      border-radius: 40px;
-      height: 22px;
-      width: 50%;
-  }
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cef3d2b0;
+    height: 100vh;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.square {
+    background-color: #CEF4D3;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.sun {
+    background-color: #fff;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    scale: 0.8;
+}
+
+.sun::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff40;
+    height: 145%;
+    width: 145%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sun::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff3d;
+    height: 185%;
+    width: 185%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.containerMontanhasEGrama{
+    /* border: 1px solid blue; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+
+.gramaWrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -100%;
+    transform: translateY(-140%);
+    left: 0;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.grama {
+    background-color: #7EE495;
+    border-radius: 40px;
+    height: 24px;
+    width: 35%;
+    margin: 0 auto 20px auto;
+}
+
+.montanhasWrapper{
+    /* border: 1px solid pink; */
+    height: 100%;
+}
+
+.montanha{
+    background-color: #1F5172;
+    height: 210px;
+    width: 50px;
+}
+
+.gramaPrincipal{
+    background-color: #55C497;
+    border-radius: 7px;
+    height: 18px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grama1{
+    width: 70%;
+}
+
+.grama2{
+    margin: 0 0 0 28%;
+    height: 26px;
+}
+
+.gramaSquare{
+    content: "";
+    height: 40px;
+    width: 70px;
+    background-color: #7EE495;
+    position: absolute;
+    left: 37%;
+    bottom: 10px;
+}
+
+.gramaSquare::after,
+.gramaSquare::before {
+    content: "";
+    background-color: #CEF4D3;
+    height: 20px;
+    border-radius: 40px;
+    top: 4px;
+    width: 50px;
+    left: -40px;
+    position: absolute;
+}
+
+.gramaSquare::before {
+    left: auto;
+    right: -30px;
+    background-color: #CEF4D3;
+}
