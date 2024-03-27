@@ -125,7 +125,9 @@ body {
 }
 
 .gramaSquare::after,
-.gramaSquare::before {
+.gramaSquare::before,
+.nuvemSquare::after,
+.nuvemSquare::before {
     content: "";
     background-color: #CEF4D3;
     height: 20px;
@@ -140,4 +142,50 @@ body {
     left: auto;
     right: -30px;
     background-color: #CEF4D3;
+}
+.nuvemWrapper{
+    position: absolute;
+    top: 36%;
+    left: 15%;
+    transform: scaleY(0.9);
+}
+
+.nuvem{
+    width: 100px;
+    position: relative;
+}
+
+.nuvemLinha{
+    background-color: #fff;
+    border-radius: 40px;
+    height: 20px;
+    margin-bottom: 14px;
+}
+
+.linha2{
+   margin: 0 -20px 0 20px;
+   width: 110%;
+}
+
+.nuvemSquare{
+    background-color: #fff;
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    top: 19px;
+    left: 35%;
+}
+
+.nuvemSquare::after,
+.nuvemSquare::before {
+    height: 15px;
+    top: 0px;
+    width: 50px;
+    left: -45px;
+}
+
+.nuvemSquare::before {
+    width: 50px;
+    right: -45px;
+    left: auto;
 }
