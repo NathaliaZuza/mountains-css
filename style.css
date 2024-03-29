@@ -88,7 +88,7 @@ body {
 
 .arvore2 .tronco,
 .arvore3 .tronco {
-    width: 4px;
+    width: px;
 }
 
 .arvore3{
@@ -97,8 +97,22 @@ body {
     left: 18%;
 }
 
-.arvore3 .folhas{
-    border-color: transparent transparent #55C593 transparent;
+.arvore4{
+    top: calc(-100% + 37px);
+    transform: scale(0.7);
+    left: 30%;
+}
+
+.arvore5{
+    top: 37%;
+    transform: scale(0.7);
+    left: 30%;
+    z-index: 2;
+}
+
+.arvore1 .folhas,
+.arvore2 .folhas {
+    border-color: transparent transparent #7FE299 transparent;
 }
 
 .tronco{
@@ -113,8 +127,61 @@ body {
 .folhas{
     width: 20px;
     border-style: solid;
-    border-color: transparent transparent #7FE299 transparent;
+    border-color: transparent transparent #55C593 transparent;
     border-width: 0px 15px 55px 15px;
+}
+
+.gramaArvore{
+    height: 10px;
+    border-radius: 4px;
+    background-color: #55C593;
+    width: 44px;
+    position: absolute;
+}
+
+.gramaArvore1{
+    left: 24%;
+    top: -10px;
+    background-color: #7EE495;
+}
+
+.gramaArvore2{
+    top: 32px;
+    left: 20%;
+    width: 62px;
+}
+
+.gramaArvore3{
+    top: 23px;
+    left: 21.5%;
+    width: 35px;
+}
+
+.gramaArvore4{
+    top: 89%;
+    left: 36%;
+    width: 55px;
+    z-index: 2;
+}
+
+.gramaArvore5{
+    top: 32px;
+    left: 60%;
+    width: 62px;
+}
+
+.gramaArvore6{
+    left: 65%;
+    width: 70px;
+    top: -10px;
+    background-color: #7EE495;
+}
+
+.gramaArvore7{
+    top: -20px;
+    left: 67%;
+    width: 45px;
+    z-index: 2;
 }
 
 .grama {
@@ -126,7 +193,6 @@ body {
 }
 
 .montanhasWrapper{
-    /* border: 1px solid pink; */
     height: 100%;
 }
 
