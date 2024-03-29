@@ -251,7 +251,9 @@ body {
 .gramaSquare::after,
 .gramaSquare::before,
 .nuvemSquare::after,
-.nuvemSquare::before {
+.nuvemSquare::before,
+.nuvemSquare2::after,
+.nuvemSquare2::before{
     content: "";
     background-color: #CEF4D3;
     height: 20px;
@@ -267,11 +269,22 @@ body {
     right: -30px;
     background-color: #CEF4D3;
 }
+
 .nuvemWrapper{
     position: absolute;
     top: 32%;
     left: 15%;
     transform: scaleY(0.9);
+}
+
+.nuvem2{
+    top: 48%;
+    left: 64%;
+}
+
+.nuvem3{
+    top: 22%;
+    left: 50%;
 }
 
 .nuvem{
@@ -291,7 +304,17 @@ body {
    width: 110%;
 }
 
-.nuvemSquare{
+.nuvem3 .linha2{
+    margin: 0 60px 0 -30px;
+    width: 110%;
+}
+
+.nuvem3 .linha3{
+    margin: 15px 60px 0 -20px;
+    width: 110%;
+}
+
+.nuvemSquare, .nuvemSquare2{
     background-color: #fff;
     height: 20px;
     width: 30px;
@@ -300,8 +323,15 @@ body {
     left: 35%;
 }
 
+.nuvemSquare2{
+    top: 50px;
+    left: 10px;
+}
+
 .nuvemSquare::after,
-.nuvemSquare::before {
+.nuvemSquare::before,
+.nuvemSquare2::after,
+.nuvemSquare2::before {
     height: 15px;
     top: 0px;
     width: 50px;
@@ -312,4 +342,18 @@ body {
     width: 50px;
     right: -45px;
     left: auto;
+}
+
+.nuvemSquare2::before {
+    height: 15px;
+    top: 0px;
+    width: 50px;
+    right: -45px;
+    left: auto;
+    z-index: 2;
+}
+
+.nuvemSquare2::after,
+.nuvemSquare2::before{
+  top: 4px;
 }
