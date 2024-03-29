@@ -25,12 +25,12 @@ body {
 
 .sun {
     background-color: #fff;
-    height: 55px;
-    width: 55px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     position: absolute;
     top: 17%;
-    left: 20%;
+    left: 22%;
     scale: 0.8;
 }
 
@@ -39,9 +39,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: #ffffff40;
-    height: 145%;
-    width: 145%;
+    background-color: #ffffff57;
+    height: 146%;
+    width: 146%;
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
@@ -52,8 +52,8 @@ body {
     top: 50%;
     left: 50%;
     background-color: #ffffff3d;
-    height: 185%;
-    width: 185%;
+    height: 189%;
+    width: 189%;
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
@@ -103,11 +103,29 @@ body {
     left: 30%;
 }
 
-.arvore5{
+.arvore5, .arvore8, .arvore9{
     top: 37%;
     transform: scale(0.7);
     left: 30%;
     z-index: 2;
+}
+
+.arvore6{
+    left: 46%;
+}
+
+.arvore7{
+    left: 82%;
+}
+
+.arvore8{
+    left: 55%;
+}
+
+.arvore9{
+    top: 27%;
+    left: 50%;
+    transform: scale(0.7, 0.9);
 }
 
 .arvore1 .folhas,
